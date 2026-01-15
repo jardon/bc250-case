@@ -9,4 +9,7 @@ union() {
         translate([55.5, -165.5, 10]) rotate([0, 90, 0]) cylinder(5.2, 2.3, false);
         translate([55.5, 165.5, 10]) rotate([0, 90, 0]) cylinder(5.2, 2.3, false);
     }
+    translate([-62, 74 , 37]) cube([123, 96.5, 3]);
+    translate([-62, -170.5 , 37]) cube([123, 36.5, 3]);
+    translate([26, -134 , 37]) cube([30, 45, 3]);
 }
