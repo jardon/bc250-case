@@ -6,9 +6,18 @@ module key_hole(height) {
     cube([2, 1, height]);
 }
 
+module keyed_cube() {
+    union() {
+        roundedcube([5, 5, 5], false, 0.2, "all");
+        roundedcube([5, 5, 5], false, 0.2, "xmin");
+        roundedcube([5, 5, 5], false, 0.2, "ymin");
+        roundedcube([5, 5, 5], false, 0.2, "zmin");
+    }
+}
+
 difference() {
     color("Green")
-    roundedcube([5, 5, 5], false, 0.2);
+    keyed_cube();
     rotate([0, 0, 45]) translate([2.5, 0, 3.5]) key_hole(1.5);
     rotate([90, -45, 90]) translate([2.5, 0, 3.5]) key_hole(1.5);
     rotate([-90,-45, 0]) translate([2.5, 0, 3.5]) key_hole(1.5);
