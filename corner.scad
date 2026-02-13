@@ -22,6 +22,9 @@ difference() {
     rotate([90, -45, 90]) translate([2.2, 0, 3.5]) key_hole(1.5);
     rotate([-90,-45, 0]) translate([2.2, 0, 3.5]) key_hole(1.5);
     rotate([0, 0, 0]) translate([3, 0, 3]) cube([2, 1, 2]);
+    rotate([0, 0, 0]) translate([1, 0, 1]) cube([4, .5, 4]);
     rotate([0, 0, 90]) translate([3, -1, 3]) cube([2, 1, 2]);
+    rotate([0, 0, 90]) translate([1, -0.5, 1]) cube([4, 0.5, 4]);
     rotate([90, 0, 0]) translate([3, 0, -5]) cube([2, 1, 2]);
+    rotate([90, 0, 0]) translate([1, 0, -5]) cube([4, 0.5, 4]);
 }
