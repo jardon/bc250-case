@@ -3,10 +3,10 @@ use <key.scad>;
 
 module keyed_cube() {
     union() {
-        roundedcube([5, 5, 5], false, 0.2, "all");
-        roundedcube([5, 5, 5], false, 0.2, "xmin");
-        roundedcube([5, 5, 5], false, 0.2, "ymin");
-        roundedcube([5, 5, 5], false, 0.2, "zmin");
+        roundedcube([5, 5, 5], false, 0.4, "all");
+        roundedcube([5, 5, 5], false, 0.4, "xmin");
+        roundedcube([5, 5, 5], false, 0.4, "ymin");
+        roundedcube([5, 5, 5], false, 0.4, "zmin");
     }
 }
 
