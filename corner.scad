@@ -3,10 +3,10 @@ use <key.scad>;
 
 module keyed_cube() {
     union() {
-        roundedcube([5, 5, 5], false, 0.4, "all");
-        roundedcube([5, 5, 5], false, 0.4, "xmin");
-        roundedcube([5, 5, 5], false, 0.4, "ymin");
-        roundedcube([5, 5, 5], false, 0.4, "zmin");
+        roundedcube([35, 35, 35], false, 2.8, "all");
+        roundedcube([35, 35, 35], false, 2.8, "xmin");
+        roundedcube([35, 35, 35], false, 2.8, "ymin");
+        roundedcube([35, 35, 35], false, 2.8, "zmin");
     }
 }
 
@@ -14,14 +14,14 @@ module corner_cube(type = "A") {
     difference() {
         color("Green")
         keyed_cube();
-        rotate([0, 0, 45]) translate([2.2, 0, 3.5]) key_shape(1.5);
-        rotate([90, -45, 90]) translate([2.2, 0, 3.5]) key_shape(1.5);
-        rotate([-90,-45, 0]) translate([2.2, 0, 3.5]) key_shape(1.5);
-        rotate([0, 0, 0]) translate([3, 0, 3]) cube([2, 1, 2]);
-        if (type == "A" || type == "B" || type == "C") rotate([0, 0, 0]) translate([1, 0, 1]) cube([4, .5, 4]);
-        rotate([0, 0, 90]) translate([3, -1, 3]) cube([2, 1, 2]);
-        if (type == "A" || type == "B") rotate([0, 0, 90]) translate([1, -0.5, 1]) cube([4, 0.5, 4]);
-        rotate([90, 0, 0]) translate([3, 0, -5]) cube([2, 1, 2]);
-        if (type == "A") rotate([90, 0, 0]) translate([1, 0, -5]) cube([4, 0.5, 4]);
+        rotate([0, 0, 45]) translate([15.4, 0, 24.5]) key_shape(10.5);
+        rotate([90, -45, 90]) translate([15.4, 0, 24.5]) key_shape(10.5);
+        rotate([-90,-45, 0]) translate([15.4, 0, 24.5]) key_shape(10.5);
+        rotate([0, 0, 0]) translate([21, 0, 21]) cube([14, 7, 14]);
+        if (type == "A" || type == "B" || type == "C") rotate([0, 0, 0]) translate([7, 0, 7]) cube([28, 3.5, 28]);
+        rotate([0, 0, 90]) translate([21, -1, 21]) cube([14, 7, 14]);
+        if (type == "A" || type == "B") rotate([0, 0, 90]) translate([7, -3.5, 7]) cube([28, 3.5, 28]);
+        rotate([90, 0, 0]) translate([21, 0, -35]) cube([14, 7, 14]);
+        if (type == "A") rotate([90, 0, 0]) translate([7, 0, -35]) cube([28, 3.5, 28]);
     }
 }
