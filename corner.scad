@@ -27,5 +27,9 @@ module corner_cube(type = "A") {
         rotate([0, 0, 0]) translate([28, 28, 7]) cylinder(h = 5, r = 2.3, $fn = 30);
         rotate([90, 90, 90]) translate([-28, 28, 7]) cylinder(h = 5, r = 2.3, $fn = 30);
         rotate([0, 90, 90]) translate([-28, -28, 7]) cylinder(h = 5, r = 2.3, $fn = 30);
+
+        rotate([0, 0, 0]) translate([28, 28, 7]) cylinder(h = 10, r = 1.6, $fn = 30);
+        rotate([90, 90, 90]) translate([-28, 28, 7]) cylinder(h = 10, r = 1.6, $fn = 30);
+        rotate([0, 90, 90]) translate([-28, -28, 7]) cylinder(h = 10, r = 1.6, $fn = 30);
     }
 }
