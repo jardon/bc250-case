@@ -2,13 +2,13 @@ use <roundedcube.scad>;
 
 difference() {
     color("Green")
-    roundedcube([4.5, 4.5, 2], false, 0.4, "z");
-    translate([1.5, 1.5, -1]) cylinder(h = 4, r = 0.7, $fn = 100);
-    translate([2, 2, -1]) roundedcube([3, 3, 4], false, 0.4, "z");
-    translate([3, 0, -1]) cube([2, 1, 4]);
-    translate([0, 3, -1]) cube([1, 2, 4]);
-    translate([2, 2, 0]) cube([1, 1, 4]);
+    roundedcube([31.5, 31.5, 14], false, 2.8, "z");
+    translate([10.5, 10.5, -7]) cylinder(h = 28, r = 4.9, $fn = 100);
+    translate([14, 14, -7]) roundedcube([21, 21, 28], false, 2.8, "z");
+    translate([21, 0, -7]) cube([14, 7, 28]);
+    translate([0, 21, -7]) cube([7, 14, 28]);
+    translate([14, 14, 0]) cube([7, 7, 28]);
     rotate([0, 0, 45])
-    translate([2, -0.5, 0])
-    cube([2, 1, 2]);
+    translate([14, -3.5, 0])
+    cube([14, 7, 14]);
 }
