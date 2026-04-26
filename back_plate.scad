@@ -35,37 +35,42 @@ module web() {
 }
 
 translate([
-            ((web_height - (card_height + (web_thickness * 2)) + 4.9) / 2) - 17,
-            ((web_width - ((card_width * 2) + (web_thickness * 3)) + 4.9) / 2) - 17.5,
+            ((web_height - (card_height + (web_thickness * 2)) + 4.9) / 2) - 21,
+            ((web_width - ((card_width * 2) + (web_thickness * 3)) + 4.9) / 2) - 21.5,
             0
         ]) difference() {
-    cube([170, 120, 7]);
-    translate([17, 13.5, 0]) cube([136, 93, 7]);
-    translate([7, 7, 0]) cylinder(h = 7, r = 2, $fn = 100);
-    translate([7, 113, 0]) cylinder(h = 7, r = 2, $fn = 100);
-    translate([163, 7, 0]) cylinder(h = 7, r = 2, $fn = 100);
-    translate([163, 113, 0]) cylinder(h = 7, r = 2, $fn = 100);
+    cube([178, 128, 6]);
+    translate([21, 17.5, 0]) cube([136, 93, 7]);
+    translate([7, 7, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
+    translate([7, 121, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
+    translate([171, 7, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
+    translate([171, 121, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
+
+    translate([7, 7, 0]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([7, 121, 0]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([171, 7, 0]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([171, 121, 0]) cylinder(h = 3, r = 3, $fn = 100);
 }
 
-translate([0, 0, 7]) difference() {
+translate([0, 0, 6]) difference() {
     web();
-    translate([80, 30.5, 0]) cube([psu_height, psu_width, 7]);
-    translate([31, 80, 0]) cube([13, 31.5, 7]);
+    translate([80, 30.5, 0]) cube([psu_height + 1, psu_width + 1, 7]);
+    translate([31, 80, 0]) cube([13 , 31.5, 7]);
 }
 
 
-color("Pink") translate([73, 25.5, 7]) difference() {
+color("Pink") translate([73, 25.5, 6]) difference() {
     cube([psu_height + 15, psu_width + 6, 7]);
-    translate([7, 7, 0]) cube([psu_height, psu_width, 7]);
+    translate([7, 5, 0]) cube([psu_height, psu_width + 1, 7]);
     translate([psu_height + 10, psu_width + 2, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
     //translate([5, psu_width + 3, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
 }
 
 translate([45, 35, 0]) union() {
     difference() {
-        translate([0, 38.5, 0]) cube([7, 43, 14]);
+        translate([0, 38.5, 0]) cube([7, 43, 13]);
         translate([0, 68.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
     }
-    translate([0, 38, 0]) cube([15, 7, 14]);
-    translate([0, 76.5, 0]) cube([15, 7, 14]);
+    translate([0, 38, 0]) cube([15, 7, 13]);
+    translate([0, 76.5, 0]) cube([15, 7, 13]);
 }
