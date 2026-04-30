@@ -9,7 +9,7 @@ key_radius = 4.9;
 psu_height = 82;
 psu_width = 42;
 
-module core() {
+module core(height = 7) {
     color("Red") union() {
         translate([
             ((web_height - (card_height + (web_thickness * 2)) + 4.9) / 2),
@@ -17,16 +17,16 @@ module core() {
             0
         ])
         difference() {
-            translate([-2, (web_thickness - (web_thickness * 2)), 0]) roundedcube([card_height + (web_thickness * 3), (card_width * 2) + (web_thickness * 5), 7], false, 2.8, "z");
-            translate([web_thickness, web_thickness, 0]) roundedcube([card_height, card_width, 7], false, 2.8, "z");
-            translate([web_thickness, (web_thickness * 2) + card_width, 0]) roundedcube([card_height, card_width, 7], false, 2.8, "z");
+            translate([-2, (web_thickness - (web_thickness * 2)), 0]) roundedcube([card_height + (web_thickness * 3), (card_width * 2) + (web_thickness * 5), height], false, 2.8, "z");
+            translate([web_thickness, web_thickness, 0]) roundedcube([card_height, card_width, height], false, 2.8, "z");
+            translate([web_thickness, (web_thickness * 2) + card_width, 0]) roundedcube([card_height, card_width, height], false, 2.8, "z");
 
-            translate([web_thickness - 3, (web_thickness * 2) + card_width - 3.5, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
-            translate([web_thickness + 60, (web_thickness * 2) + card_width - 3.5, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
-            translate([web_thickness + 125, (web_thickness * 2) + card_width - 3.5, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
+            translate([web_thickness - 3, (web_thickness * 2) + card_width - 3.5, 0]) cylinder(h = height, r = 1.2, $fn = 100);
+            translate([web_thickness + 60, (web_thickness * 2) + card_width - 3.5, 0]) cylinder(h = height, r = 1.2, $fn = 100);
+            translate([web_thickness + 125, (web_thickness * 2) + card_width - 3.5, 0]) cylinder(h = height, r = 1.2, $fn = 100);
 
-            translate([web_thickness - 3, (web_thickness * 2) - 10, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
-            translate([web_thickness + 125, (web_thickness * 2) - 10, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
+            translate([web_thickness - 3, (web_thickness * 2) - 10, 0]) cylinder(h = height, r = 1.2, $fn = 100);
+            translate([web_thickness + 125, (web_thickness * 2) - 10, 0]) cylinder(h = height, r = 1.2, $fn = 100);
         }
     }
     
