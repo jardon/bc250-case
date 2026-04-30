@@ -46,7 +46,7 @@ color("Pink") translate([73, (card_width * 2) + (web_thickness * 2.5) - 1, 6]) d
 translate([45, -3.5, 0]) union() {
     difference() {
         translate([0, 38.5, 0]) cube([7, 43, 13]);
-        translate([0, 68.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
+        translate([0, 66.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
     }
     translate([0, 38, 0]) cube([15, 7, 13]);
     translate([0, 76.5, 0]) cube([15, 7, 13]);
