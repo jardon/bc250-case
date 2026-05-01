@@ -41,9 +41,9 @@ module core(height = 7, type = "A") {
     
     if (type == "B")
     color("Pink") translate([73, 26, 0]) difference() {
-        cube([psu_height + 14, psu_width + 6, 7]);
+        cube([psu_height + 14.9, psu_width + 6, 7]);
         translate([7, 7, 0]) cube([psu_height, psu_width, 7]);
-        translate([psu_height, 2, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
-        translate([5, 10, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
+        translate([psu_height + 10, 3.5, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
+        translate([4, 3.5, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
     }
 }
