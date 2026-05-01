@@ -18,7 +18,7 @@ module core(height = 7, type = "A") {
                 0
             ])
             difference() {
-                translate([-2, (web_thickness - (web_thickness * 2)), 0]) roundedcube([card_height + (web_thickness * 3), (card_width * 2) + (web_thickness * 5), height], false, 2.8, "z");
+                translate([-2, 0, 0]) roundedcube([card_height + (web_thickness * 2) + 3.5, (card_width * 2) + (web_thickness * 3), height], false, 2.8, "z");
                 translate([web_thickness, web_thickness, 0]) roundedcube([card_height, card_width, height], false, 2.8, "z");
                 translate([web_thickness, (web_thickness * 2) + card_width, 0]) roundedcube([card_height, card_width, height], false, 2.8, "z");
 
