@@ -36,8 +36,9 @@ translate([0, 0, 6]) difference() {
 }
 
 translate([30, 26, 6]) cube([142, 10, 7]);
+translate([24, 26, 6]) cube([10, 102, 7]);
 translate([30, (card_width * 2) + (web_thickness * 3) + 34, 6]) cube([44, 10, 7]);
-
+translate([card_height + 44, 26, 6]) cube([10, 102, 7]);
 
 color("Pink") translate([73, (card_width * 2) + (web_thickness * 2.5) - 1, 6]) difference() {
     cube([psu_height + 15, psu_width + 6, 7]);
