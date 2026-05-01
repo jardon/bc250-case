@@ -31,6 +31,7 @@ module core(height = 7, type = "A") {
                 translate([web_thickness + 125, (web_thickness * 3) + (card_width * 2) - 3.5, 0]) cylinder(h = height, r = 1.2, $fn = 100);
 
                 translate([web_thickness - 3, (web_thickness * 2) - 10, 0]) cylinder(h = height, r = 1.2, $fn = 100);
+                translate([web_thickness + 60, (web_thickness * 2) - 10, 0]) cylinder(h = height, r = 1.2, $fn = 100);
                 translate([web_thickness + 125, (web_thickness * 2) - 10, 0]) cylinder(h = height, r = 1.2, $fn = 100);
             }
         }
@@ -46,4 +47,3 @@ module core(height = 7, type = "A") {
         translate([5, 10, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
     }
 }
-
