@@ -14,43 +14,36 @@ psu_width = 42;
 translate([
             ((web_height - (card_height + (web_thickness * 2)) + 4.9) / 2) - 21,
             ((web_width - ((card_width * 2) + (web_thickness * 3)) + 4.9) / 2) - 21.5,
-            0
+            6
         ]) difference() {
     cube([178, 128, 6]);
     translate([21, 17.5, 0]) cube([136, 93, 7]);
+    translate([21, 13.5, 0]) cube([136, 7, 7]);
     translate([7, 7, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
     translate([7, 121, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
     translate([171, 7, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
     translate([171, 121, 0]) cylinder(h = 7, r = 1.5, $fn = 100);
 
-    translate([7, 7, 0]) cylinder(h = 3, r = 3, $fn = 100);
-    translate([7, 121, 0]) cylinder(h = 3, r = 3, $fn = 100);
-    translate([171, 7, 0]) cylinder(h = 3, r = 3, $fn = 100);
-    translate([171, 121, 0]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([7, 7, 3]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([7, 121, 3]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([171, 7, 3]) cylinder(h = 3, r = 3, $fn = 100);
+    translate([171, 121, 3]) cylinder(h = 3, r = 3, $fn = 100);
 }
 
-translate([0, 0, 6]) difference() {
-    core();
-    translate([75, (card_width * 2) + (web_thickness * 2.5), 0]) cube([psu_height + 10, psu_width + 1, 7]);
-    translate([31, card_width + web_thickness + 3, 0]) cube([13 , 31.5, 7]);
+difference() {
+    core(type = "B");
+    translate([31, (card_width * 2) + (web_thickness * 2) + 3, 0]) cube([13 , 31.5, 7]);
 }
 
-translate([30, 26, 6]) cube([142, 10, 7]);
-translate([24, 26, 6]) cube([10, 102, 7]);
-translate([30, (card_width * 2) + (web_thickness * 3) + 34, 6]) cube([44, 10, 7]);
-translate([card_height + 44, 26, 6]) cube([10, 102, 7]);
+translate([30, 26, 0]) cube([44, 10, 7]);
+translate([26, 26, 0]) cube([10, (card_width * 2) + (web_thickness * 5), 7]);
+translate([30, (card_width * 2) + (web_thickness * 5) + 20, 0]) cube([144, 7, 7]);
+translate([24 + card_height + (web_thickness * 3), 26, 0]) cube([5, (card_width * 2) + (web_thickness * 5), 7]);
 
-color("Pink") translate([73, (card_width * 2) + (web_thickness * 2.5) - 1, 6]) difference() {
-    cube([psu_height + 15, psu_width + 6, 7]);
-    translate([7, 0, 0]) cube([psu_height, psu_width, 7]);
-    translate([3.5, psu_width - 2, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
-    translate([web_thickness + psu_height + 3 + 0.222, psu_width - 2, 0]) cylinder(h = 7, r = 1.2, $fn = 100);
-}
-
-translate([45, -3.5, 0]) union() {
+translate([45, card_width + web_thickness- 3.5, 0]) union() {
     difference() {
         translate([0, 38.5, 0]) cube([7, 43, 13]);
-        translate([0, 66.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
+        translate([0, 57.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
     }
     translate([0, 38, 0]) cube([15, 7, 13]);
     translate([0, 76.5, 0]) cube([15, 7, 13]);
