@@ -9,13 +9,10 @@ web_height = 198.222;
 web_width = 148.222;
 key_radius = 4.9;
 
-module web() {
+module web(type = "A") {
     union() {
          difference() {
-             core();
-             color("purple") translate([card_width, 27, 0]) cube([card_height + (web_thickness * 3), 7, 8]);
-             color("purple") translate([card_width, 28 + (card_width * 2) + (web_thickness * 4), 0]) cube([card_height + (web_thickness * 3), 7, 8]);
-             color("purple") translate([27 + card_height + (web_thickness * 3), 27, 0]) cube([7, (card_width * 2) + (web_thickness * 4.5), 8]);
+             core(type = type);
          }
          translate([key_radius - (key_radius / 2), key_radius - (key_radius / 2), 7]) cylinder(4, 3, $fn = 30);
          difference() {
