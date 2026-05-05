@@ -36,11 +36,11 @@ module core(height = 7, type = "A") {
             }
         }
 
-    if (type == "B") translate([73, 19, 0]) cube([psu_height + web_thickness, psu_width + web_thickness, height]);
+    if (type == "B") translate([73, 18, 0]) cube([psu_height + web_thickness, psu_width + web_thickness, height]);
     }
     
     if (type == "B")
-    color("Pink") translate([73, 26, 0]) difference() {
+    color("Pink") translate([73, 25, 0]) difference() {
         cube([psu_height + 14.9, psu_width + 6, height]);
         translate([7, 7, 0]) cube([psu_height, psu_width, height]);
         translate([psu_height + 10, 3.5, 0]) cylinder(h = height, r = 1.2, $fn = 100);
