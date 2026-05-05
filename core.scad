@@ -36,7 +36,7 @@ module core(height = 7, type = "A") {
             }
         }
 
-    if (type == "B") translate([73, 18, 0]) cube([psu_height + web_thickness, psu_width + web_thickness, height]);
+    if (type == "B") translate([73, 17, 0]) cube([psu_height + (web_thickness * 2), psu_width + (web_thickness * 2), height]);
     }
     
     if (type == "B")
