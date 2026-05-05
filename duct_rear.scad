@@ -4,7 +4,7 @@ height = 80;
 
 difference() {
     core(type = "B", height = height);
-    translate([90, 25, 0]) cube([65, 7, height]);
+    translate([90, 25, 0]) cube([65, 7.5, height]);
     translate([33, 33, 0]) cube([40, 40, height]);
     translate([33, 80, 0]) cube([10, 31.5, height]);
 
