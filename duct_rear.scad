@@ -1,6 +1,6 @@
 use <core.scad>
 
-height = 133;
+height = 80;
 
 difference() {
     core(type = "B", height = height);
