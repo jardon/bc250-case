@@ -14,7 +14,7 @@ module web(type = "A") {
          difference() {
              core(type = type);
          }
-         translate([key_radius - (key_radius / 2), key_radius - (key_radius / 2), 7]) cylinder(4, 2.9, $fn = 30);
+         translate([key_radius - (key_radius / 2), key_radius - (key_radius / 2), 6.9]) cylinder(4, 3, $fn = 30);
          difference() {
              translate([key_radius - (key_radius / 2), key_radius - (key_radius / 2), 0]) rotate([0, 0, 45]) key_shape(7);
              translate([key_radius - (key_radius / 2), key_radius - (key_radius / 2), 0]) cylinder(4, 3, $fn = 30);
@@ -24,7 +24,7 @@ module web(type = "A") {
              translate([38.5, 39.5, 0]) cylinder(h = 10, r = 5);
          }
  
-         translate([key_radius - (key_radius / 2), web_width + (key_radius / 2), 7]) cylinder(4, 2.9, $fn = 30);
+         translate([key_radius - (key_radius / 2), web_width + (key_radius / 2), 6.9]) cylinder(4, 3, $fn = 30);
          difference() {
              translate([key_radius - (key_radius / 2), web_width + (key_radius / 2), 0]) rotate([0, 0, -45]) key_shape(7);
              translate([key_radius - (key_radius / 2), web_width + (key_radius / 2), 0]) cylinder(4, 3, $fn = 30);
@@ -34,7 +34,7 @@ module web(type = "A") {
              translate([38.5, web_width - 35, 0]) rotate([0, 0, -45]) cylinder(h = 10, r = 5);
          }
  
-         translate([web_height + (key_radius / 2), key_radius - (key_radius / 2), 7]) cylinder(4, 2.9, $fn = 30);
+         translate([web_height + (key_radius / 2), key_radius - (key_radius / 2), 6.9]) cylinder(4, 3, $fn = 30);
          difference () {
              translate([web_height + (key_radius / 2), key_radius - (key_radius / 2), 0]) rotate([0, 0, 135]) key_shape(7);
              translate([web_height + (key_radius / 2), key_radius - (key_radius / 2), 0]) cylinder(4, 3, $fn = 30);
@@ -44,7 +44,7 @@ module web(type = "A") {
              translate([card_height + 42.5, 39.5, 0]) cylinder(h = 10, r = 5);
          }
  
-         translate([web_height + (key_radius / 2), web_width + (key_radius / 2), 7]) cylinder(4, 2.9, $fn = 30);
+         translate([web_height + (key_radius / 2), web_width + (key_radius / 2), 6.9]) cylinder(4, 3, $fn = 30);
          difference() {
              translate([web_height + (key_radius / 2), web_width + (key_radius / 2), 0]) rotate([0, 0, -135]) key_shape(7);
              translate([web_height + (key_radius / 2), web_width + (key_radius / 2), 0]) cylinder(4, 3, $fn = 30);
