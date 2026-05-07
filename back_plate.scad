@@ -36,7 +36,8 @@ difference() {
 }
 
 translate([30, 24, 0]) cube([44, 12, 7]);
-translate([26, 26, 0]) cube([9, (card_width * 2) + (web_thickness * 5), 7]);
+color("Green") translate([26, 27.5, 0]) cube([9, (card_width) + (web_thickness * 3), 7]);
+color("Blue") translate([26, 111.5, 0]) cube([9, (web_thickness * 2), 7]);
 translate([30, (card_width * 2) + (web_thickness * 5) + 20, 0]) cube([144, 7, 7]);
 translate([24 + card_height + (web_thickness * 3), 26, 0]) cube([5, (card_width * 2) + (web_thickness * 5), 7]);
 
