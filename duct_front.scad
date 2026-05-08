@@ -50,10 +50,10 @@ difference() {
 translate([45, card_width + web_thickness- 3.5, 0]) union() {
     difference() {
         translate([0, 38.5, 0]) cube([7, 43, 12]);
-        translate([0, 62.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
+        translate([0, 52.5, 6]) rotate([0, 90, 0]) cylinder(h = 7, r = 2.3, $fn = 100);
     }
     translate([0, 38, 0]) cube([15, 7, 12]);
     translate([0, 76.5, 0]) cube([15, 7, 12]);
 }
 
-color("Orange") translate([33.5 + blower_height, 42, 0]) cube([7, card_width + 1, 7]);
+color("Orange") translate([40.5 + blower_height, 41, 0]) cube([7, card_width + 1, 7]);
