@@ -1,7 +1,7 @@
 use <wedge.scad>;
 
 difference() {
-    cube([174, 128, 7]);
+    cube([174, 128, 6]);
     translate([167, 121, 0]) cylinder(h = 7, r = 1.6, $fn = 30);
     translate([167, 7, 0]) cylinder(h = 7, r = 1.6, $fn = 30);
 
