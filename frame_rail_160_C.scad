@@ -1,7 +1,7 @@
 use <rail.scad>;
 use <key.scad>;
 
-height = 180;
+height = 160;
 
 translate([0, 40, 0]) difference() {
     union() {
