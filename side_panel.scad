@@ -19,4 +19,4 @@ difference() {
     translate([0, 93, -2]) wedge(width = 30);
 }
 
-translate([100, width + 30, -4]) color("Green") wedge(width = 30);
+translate([100, width + 30, -4]) color("Green") wedge(width = 29.8);
