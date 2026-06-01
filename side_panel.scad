@@ -21,12 +21,13 @@ module side_panel(vented = false) {
             translate([0, 15, -2]) wedge(width = 30);
             translate([0, 93, -2]) wedge(width = 30);
             
-            translate([120, 44.5, 0]) cube([40, 120, 3]);
+            if (vented) translate([120, 44.5, 0]) cube([40, 120, 3]);
 
             translate([height - 7.5, width + 48.5, 0.2]) cylinder(h = 3, r = 3.1, $fn = 30);
             translate([height - 7.5, 7.5, 0.2]) cylinder(h = 3, r = 3.1, $fn = 30);
         }
     }
+    if (vented)
     for (x = [0 : 1 : 2]) {
         for (y = [0 : 1 : 5]) {
             translate([120 + (x * 20) , 44.5 + (y * 20), 0]) vent_holes();
@@ -34,6 +35,6 @@ module side_panel(vented = false) {
     }
 }
 
-side_panel(vented = true);
+side_panel(vented = false);
 
 translate([100, width + 30, -4]) color("Green") wedge(width = 29.8);
