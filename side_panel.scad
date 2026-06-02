@@ -1,7 +1,7 @@
 use <wedge.scad>;
 use <vent_holes.scad>;
 
-width = 150;
+width = 100;
 height = 188;
 
 module side_panel(vented = false) {
@@ -18,8 +18,8 @@ module side_panel(vented = false) {
             translate([height - 20.5, width + 35.5, 0]) cylinder(h = 3, r = 3, $fn = 30);
             translate([height - 20.5, 20.5, 0]) cylinder(h = 3, r = 3, $fn = 30);
 
-            translate([0, 15, -2]) wedge(width = 30);
-            translate([0, 93, -2]) wedge(width = 30);
+            translate([100, (((width + 56) / 6) * 1) + 15, 7]) wedge(width = 30);
+            translate([100, (((width + 56) / 6) * 5) - 34 - 15, 7]) wedge(width = 30);
             
             if (vented) translate([120, 44.5, 0]) cube([40, 120, 3]);
 
@@ -37,4 +37,4 @@ module side_panel(vented = false) {
 
 side_panel(vented = false);
 
-translate([100, width + 30, -4]) color("Green") wedge(width = 29.8);
+translate([200, width + 10 + 56, 4]) color("Green") wedge(width = 29.8);
