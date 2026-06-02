@@ -23,8 +23,8 @@ module side_panel(vented = false) {
             
             if (vented) translate([120, 44.5, 0]) cube([40, 120, 3]);
 
-            translate([height - 7.5, width + 48.5, 0.2]) cylinder(h = 3, r = 3.1, $fn = 30);
-            translate([height - 7.5, 7.5, 0.2]) cylinder(h = 3, r = 3.1, $fn = 30);
+            translate([height - 7.5, width + 48.5, 0.3]) cylinder(h = 3, r = 3.1, $fn = 30);
+            translate([height - 7.5, 7.5, 0.3]) cylinder(h = 3, r = 3.1, $fn = 30);
         }
     }
     if (vented)
