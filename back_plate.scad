@@ -1,6 +1,7 @@
 use <key.scad>;
 use <roundedcube.scad>;
 use <core.scad>;
+use <vent_holes.scad>;
 
 card_height = 122.5;
 card_width = 31.5;
@@ -48,4 +49,10 @@ translate([45, card_width + web_thickness- 3.5, 0]) union() {
     }
     translate([0, 38, 0]) cube([15, 7, 12]);
     translate([0, 76.5, 0]) cube([15, 7, 12]);
+}
+
+for (x = [0 : 1 : 1]) {
+    for (y = [0 : 1 : 1]) {
+        translate([39 + (x * 20) , 37.5 + (y * 20), 0]) vent_holes();
+    }
 }
