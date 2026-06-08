@@ -33,3 +33,4 @@
 - 1 * web center
 - 1 * web front
 - 1 * web rear
+- 8 * wedge 30
