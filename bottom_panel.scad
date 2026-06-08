@@ -7,7 +7,6 @@ difference() {
 
     translate([167, 121, 0]) cylinder(h = 3, r = 4, $fn = 30);
     translate([167, 7, 0]) cylinder(h = 3, r = 4, $fn = 30);
-    translate([100, (128 / 4), 7]) color("Green") wedge();
+    translate([100, ((128 / 4) * 1) - 10, 7]) color("Green") wedge(width = 30);
+    translate([100, ((128 / 4) * 2) + 10, 7]) color("Green") wedge(width = 30);
 }
-
-translate([200, 140, 4]) color("Green") wedge();
