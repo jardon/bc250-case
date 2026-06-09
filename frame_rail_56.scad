@@ -1,4 +1,4 @@
-use <rail.scad>;
+use <rail_trim.scad>;
 use <key.scad>;
 
 height = 56;

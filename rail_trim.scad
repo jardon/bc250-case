@@ -1,6 +1,6 @@
 use <roundedcube.scad>;
 
-module rail(height, type = "A") {
+module rail_trim(height, type = "A") {
     difference() {
         color("Green")
         roundedcube([31.5, 31.5, height], false, 2.8, "z");
@@ -16,3 +16,5 @@ module rail(height, type = "A") {
         cube([14, 7, height]);
     }
 }
+
+rail_trim(height = "100");

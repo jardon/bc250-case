@@ -1,3 +1,3 @@
-use <rail.scad>;
+use <rail_trim.scad>;
 
 rail(14);
