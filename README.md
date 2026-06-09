@@ -3,6 +3,7 @@
 ## Bill of Materials (BOM)
 - PETG or high temp tolerant filament (at least for part for cooling)
 - 3D printer capable of printing at least 200mm x 200mm
+- super glue
 
 - 1 * back plate
 - 1 * bottom cover
