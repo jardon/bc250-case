@@ -14,9 +14,9 @@
 - 1 * duct front
 - 1 * duct rear
 - 4 * foot
-- 4 * frame 100
-- 4 * frame 150
-- 8 * frame 160
+- 4 * frame trim 100
+- 4 * frame trim 150
+- 8 * frame trim 160
 - 4 * frame rail 118
 - 4 * frame rail 168
 - 4 * frame rail 26
