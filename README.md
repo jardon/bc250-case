@@ -26,7 +26,7 @@
 - 4 * frame trim 160 C
 - 4 * frame rail 118
 - 4 * frame rail 168
-- 4 * frame rail 26
+- 4 * frame rail 24
 - 4 * frame rail 65
 - 4 * frame rail 108
 - 4 * frame rail 120
