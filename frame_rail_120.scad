@@ -1,6 +1,6 @@
 use <key.scad>;
 
-height = 106;
+height = 120;
 
 difference() {
     rotate([180, 90, 0]) translate([-14, -20, -70]) key_shape((height));
