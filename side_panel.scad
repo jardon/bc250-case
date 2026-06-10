@@ -1,9 +1,8 @@
 use <vent_holes.scad>;
 
-width = 100;
 height = 188;
 
-module side_panel(vented = false) {
+module side_panel(vented = false, width = 150) {
     union() {
         difference() {
             union() {
