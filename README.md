@@ -4,7 +4,10 @@
 - PETG or high temp tolerant filament (at least for part for cooling)
 - 3D printer capable of printing at least 200mm x 200mm
 - super glue
-
+- m3 button cap screws
+- m3 hex cap screws
+- 6x3mm magnets
+- m3 heat inserts 
 - 1 * back plate
 - 1 * bottom cover
 - 2 * bottom panel
