@@ -1,4 +1,3 @@
-use <wedge.scad>;
 use <vent_holes.scad>;
 
 width = 100;
@@ -36,5 +35,3 @@ module side_panel(vented = false) {
 }
 
 side_panel(vented = false);
-
-translate([200, width + 10 + 56, 4]) color("Green") wedge(width = 29.8);
