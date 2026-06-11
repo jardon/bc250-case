@@ -55,4 +55,3 @@ module web(type = "A") {
          }
     }
 }
-web();

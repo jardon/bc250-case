@@ -32,5 +32,3 @@ module side_panel(vented = false, width = 150) {
         }
     }
 }
-
-side_panel(vented = false);

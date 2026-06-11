@@ -47,4 +47,3 @@ module core(height = 7, type = "A") {
         translate([4, 4, 0]) cylinder(h = height, r = 1.6, $fn = 100);
     }
 }
-core(type = "B");

@@ -16,5 +16,3 @@ module rail_trim(height, type = "A") {
         cube([14, 7, height]);
     }
 }
-
-rail_trim(height = "100");

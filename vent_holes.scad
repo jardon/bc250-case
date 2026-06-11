@@ -9,5 +9,3 @@ module vent_holes(height = 3) {
         }
     }
 }
-
-vent_holes();
