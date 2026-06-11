@@ -1,5 +1,8 @@
 # Asrock BC-250 Case
 
+![case image 1](/images/case_1.jpg)
+![case image 2](/images/case_2.jpg)
+
 ## Bill of Materials (BOM)
 - PETG or high temp tolerant filament (at least for part for cooling)
 - 3D printer capable of printing at least 200mm x 200mm
