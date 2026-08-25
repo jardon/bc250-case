@@ -4,6 +4,8 @@
 ![case image 2](/images/case_2.jpg)
 
 ## Bill of Materials (BOM)
+- Apevia ITX-PFC500W Fully Modular ITX 500W Power Supply, Active PFC 90-264V or similar
+- PWM 4Pin 120mm x 32mm Brushless Blower Fan 12V [link](https://www.amazon.com/dp/B0CG1THPRD?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 - PETG or high temp tolerant filament (at least for part for cooling)
 - 3D printer capable of printing at least 200mm x 200mm
 - super glue
